@@ -55,7 +55,17 @@ http.createServer((req,res)=>{
           }).catch((error) => {
             console.error(error);
           });
-        let form= new formidable.IncomingForm();
+        function FormParse(){
+
+          let form= new formidable.IncomingForm();
+          console.log("promised");
+          prom.then(()=>{
+            form.parse(req,(err,fields,files)=>{
+              console.log(fields);
+              console.log("then");
+            })
+          })
+        }
 
     }
 }).listen(5500)
