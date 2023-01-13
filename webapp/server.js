@@ -5,12 +5,15 @@ const fs= require("fs")
 
 http.createServer((req,res)=>{
 
+
+
     if (req.url="/loginpage")
     {
-        loginpage=fs.readFile("login.html", (err,data)=>{
+        loginpage=fs.readFile("webapp/login.html", (err,data)=>{
             if(err) throw err;
-            res.write(data);
+            res.write(loginpage);
             return res.end();
         })
     }
-}).listen(8080)
+}).listen(5500)
+//http://localhost:5500/loginpage/
