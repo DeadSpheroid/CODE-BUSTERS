@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship login portal</title>
+    <style>
+        #bd {
+            background-image: url('https://st3.depositphotos.com/1003525/19439/i/600/depositphotos_194396430-stock-photo-orange-blue-gradient-background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #image {
+            border: 3px solid black;
+            width: 600px;
+            height: 200px;
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 5%;
+
+
+
+
+        }
+
+        #form {
+            border: 3px solid rgb(212, 129, 129);
+            width: 400px;
+            height: 600px;
+            text-align: center;
+            margin: 30px;
+            font-size: 25px;
+            background-color: aliceblue;
+
+        }
+
+        .but {
+            background: rgb(6, 132, 250);
+            color: white;
+            padding: 3px;
+            margin: 6px;
+            cursor: pointer;
+        }
+
+        .but:hover {
+            color: black;
+            background-color: rgb(36, 145, 200);
+        }
+
+        .form {
+            margin: 30px;
+            padding: 3%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+    </style>
+</head>
+
+<body id="bd">
+    <script>
+        function handleSubmit() {
+            //e.preventDefault()
+
+            fetch('localhost:3000/processing').then(res => console.log(res))
+            console.log("helllo")
+        }
+    </script>
+    <div id="image" class="img">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.BGPeo1cGGDXfyEoHaPOeIwAAAA&pid=Api&P=0"
+            alt="Error image not loading">
+    </div>
+    <form id="form" class="form1" enctype="multipart/form-data" , method="POST" onSubmit="handleSubmit() ">
+        <div style="font-family: 'Times New Roman', Times, serif;" class="form">
+            VJTI SCHOLARSHIP PORTAL
+
+        </div>
+        <div class="form">
+            E-MAIL ADDRESS: <input type="email" name="Email" id="email">
+        </div>
+        <div class="form">
+            PASSWORD: <input type="text" name="Password" id="password">
+        </div>
+        <div class="form">
+            Remember Me: <input type="checkbox" name="RememberMe" id="checkbox">
+        </div>
+
+        <div class="form">
+            <a>Forgot Password?</a>
+        </div>
+        <div>
+            <!-- <input type="submit" value="LOGIN NOW" class="subbut">
+    <input type="button" value="CREATE ACCOUNT" class="but"> -->
+
+        </div>
+    </form>
+
+    <button type="submit" form="form" value="Submit">Submit</button>
+
+
+</body>
+
+</html>
