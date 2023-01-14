@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "491056912929",
+    "firebase_url": "https://scholarship-portal-5bd6b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "scholarship-portal-5bd6b",
+    "storage_bucket": "scholarship-portal-5bd6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491056912929:android:6098312a736b952b28e160",
+        "android_client_info": {
+          "package_name": "com.example.scholarshipportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491056912929-tr42bj8o264q59mk39o51i0c2rfk6nh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyPSQP-gwo38xgvXf6onnoNEM3Qexwj4Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491056912929-tr42bj8o264q59mk39o51i0c2rfk6nh9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
