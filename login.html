@@ -6,92 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scholarship login portal</title>
     <style>
-        #bd{
+        #boss{
+
             background-image: url('https://st3.depositphotos.com/1003525/19439/i/600/depositphotos_194396430-stock-photo-orange-blue-gradient-background.jpg');
             background-repeat: no-repeat;
             background-size: cover;
+        }
+
+        #bd{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
+            justify-content: space-evenly;  
+            align-items: center; 
+          
             
         }
-      #image {
-        border: 3px solid black;
-        width: 600px;
-        height: 200px;
-        text-align: center;
-        margin-top: 50px;
-        padding-top: 5%;
-       
-    
         
-        
-    }
-    #form
-    {
-        border: 3px solid rgb(212, 129, 129);
-        width: 400px;
-        height: 600px;
-        text-align: center;
-        margin: 30px;
-        font-size: 25px;
-        background-color: aliceblue;
-        font-family: ;
-        
-        
-    }
-    .but{
-       background: rgb(6, 132, 250);
-       color: white;
-       padding: 3px;
-       margin: 6px;
-       cursor:pointer;
-    }
-     
-    .but:hover{
-        color: black;
-        background-color: rgb(36, 145, 200);
-    }
-    .form{
-        margin: 30px;
-        padding: 3%;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-    }
-    
-    </style>
+         .image {
+             margin: 50px 10px; 
+             width: 20px;
+             height: 20px;
+              
+            }
+            #form
+            {   
+
+                border: 3px solid rgb(212, 129, 129);
+                width: 500px;
+                height: 600px;
+                /* text-align: center; */
+                margin: 10px;
+                font-size: 25px;
+                background-color: aliceblue;  
+                
+            }
+            .a{
+                text-decoration: none;
+            }
+            
+            .but{
+                background: rgb(6, 132, 250);
+                color: white;
+                padding: 3px;
+                margin: 6px 10px;
+                cursor:pointer;
+                font-size: 25px;
+                border-radius: 5px;
+            }
+            
+            .but:hover{
+                color: black;
+                background-color: rgb(36, 145, 200);
+            }
+            .form{
+                margin: 30px;
+                padding: 3% 0%;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                
+            }
+            #f1{
+                font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif; 
+                font-size: 40px;
+                text-decoration: underline;
+                
+            }
+            </style>
 </head>
-<body id="bd">
-    <div id="image" class="img">
-      <img src="https://tse4.mm.bing.net/th?id=OIP.BGPeo1cGGDXfyEoHaPOeIwAAAA&pid=Api&P=0" alt="Error image not loading">
-    </div>
+<body id="boss">
+    <div id="bd">
+
+       
+            
+            <span class="img">
+                <img src="https://seeklogo.com/images/V/vjti-college-logo-707F46CDA8-seeklogo.com.png" alt="Error loading image" >
+
+            </span>
+            <span id="image" class="img">
+                <img src="https://i2.wp.com/studybharat.com/wp-content/uploads/2016/01/Veermata-Jijabai-Technological-Institute-VJTI-Matunga-Mumbai.jpg?fit=660%2C330&ssl=1" alt="Error image not loading ;">
+                
+            </span>
+        
+    
     <form action="backend.php" id="form" class="form1">
-       <div style="font-family: 'Times New Roman', Times, serif;" class="form">
+       <div id="f1" class="form">
           VJTI SCHOLARSHIP PORTAL 
           
-       </div>
+        </div>
         <div class="form" >
             E-MAIL ADDRESS: <input type="email" name="MyEmail" id="email">
         </div> 
         <div class="form">
-          PASSWORD: <input type="text" name="MyPassword" id="password" >
+            PASSWORD: <input type="text" name="MyPassword" id="password" >
         </div> 
-       <div class="form">
-           Remember Me: <input type="checkbox" name="checkbox" id="checkbox" >
+        <div class="form">
+            Remember Me: <input type="checkbox" name="checkbox" id="checkbox" >
        </div > 
     
    <div class="form">
-   <a href="" style="linkstyle">Forgot Password?</a> 
+   <a href="" target="_blank" style="text-decoration: none;">Forgot Password?</a> 
    </div> 
    <div>
-    <input type="submit" value="LOGIN NOW" class="but">
+       <!-- <input type="submit" value="LOGIN NOW" class="but"> -->
+       <button class="but">
+           <a href="http://127.0.0.1:5500/Scholarship%20folder/homepage.html" class="but" style="text-decoration: none;">LOGIN NOW</a> 
+        </button>   
         
-    
-    <input type="button" value="CREATE ACCOUNT" class="but">
-   
-   </div> 
+        <input type="button" value="CREATE ACCOUNT" class="but">
+        
+    </div> 
+</div>
 </form>
 </body>
 </html>
