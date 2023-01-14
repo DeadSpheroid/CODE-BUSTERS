@@ -24,6 +24,17 @@
     .layout{ position: relative; top: 100px;}
     .pic{padding:0%}
     #button {position: relative;top: 70px;}
+    .but{
+        background-color: blue;
+        color: white;
+        
+    }
+    .but:hover{
+        color: black;
+        background-color: blueviolet;
+    }
+ 
+    
     </style>
 </head>
 <body class="container">
@@ -57,13 +68,17 @@
    
     
    <div>
-    <button id ="button"class="btn btn-primary">
-        VIEW STATUS 
+    <button id ="button" class="but" style="text-decoration: none;">
+        <a href ="http://127.0.0.1:5500/remark.html" class="but"> 
+          VIEW STATUS </a>
+     
     </button></div>
    
    </div>
   
 </form>
+
+
 
 
 </body>
